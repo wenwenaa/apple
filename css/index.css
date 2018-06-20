@@ -1,0 +1,839 @@
+@import url('base.css');
+
+/* head开始 */
+header{
+	width: 100%;
+	height: 40px;
+	background: #444444;
+}
+header main{
+	height: 40px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+header main .guanggao{
+	font-size: 10px;
+	color: #fff;
+}	
+/* head结束 */
+/* 导航开始 */
+nav{
+	width: 100%;
+	height: 44px;
+	background: #333;
+}
+nav ul{
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+  nav ul li a{
+    font-size: 16px;
+    color: #fff;
+  }
+/* 导航结束 */
+/* banner开始 */
+ .listbox{
+ 	width: 100%;
+ 	height: 100%;
+ }
+ .listbox ul li{
+    width: 100%;
+    background: #fafafa;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 12px;
+ }
+ .listbox ul li:last-child{
+ 	margin-bottom: 0;
+ }
+ .listbox h1{
+ 	text-align: center;
+ 	color: #111111;
+ 	font-weight: bold;
+ }
+ .listbox h2{
+ 	text-align: center;
+ 	color: #111111;
+ }
+ .listbox div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+ }
+  #tebie{
+ 	border-radius: 3px;
+ 	color: #fff;
+ 	text-align: center;
+    border: 1px solid #fff;
+
+ }
+ .listbox .hongse{
+ 	background: #b00e23;
+ 	position: relative;
+ }
+.listbox .hongse h3{
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+}
+.listbox .liaojie{
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.liaojie a{
+	color: #fff;
+}
+.liaojie .xianzi:hover{
+	text-decoration: underline;
+}
+.tutu{
+    position: absolute;
+    bottom:0;
+    left: auto;
+ 
+}
+/* banner结束 */
+
+.shangtu1{
+	width: 258px;
+	height: 66px;
+	margin: 59px auto 15px;
+
+}
+.shangtu2{
+	width: 107px;
+	height: 27px;
+	margin: 47px auto 15px;
+
+}
+.shangtu3{
+	width: 206px;
+	height: 52px;
+	margin: 44px auto 14px;
+
+}
+
+
+/* >1024 */
+@media screen and (min-width: 1024px){
+	header main{
+		width: 976px;
+	}
+	nav ul{
+		width: 976px;
+	}
+	.min{
+		display: none;
+	}
+/* 第一开始 */
+	.listbox ul li{
+    height: 580px;
+ 
+ }
+ .listbox h1{
+ 	font-size: 40px;
+ 	line-height: 64px;
+ 	margin-top: 85px;
+ }
+ .listbox h2{
+ 	font-size: 22px;
+ 	line-height: 64px;
+
+ }
+ .listbox .xiatu{
+ 	width: 909px;
+ 	height: 194px;
+    bottom: 110px;
+    background: url('../img/iphone_x_large_2x.jpg') no-repeat center/cover;
+ }
+
+ /* 第一结束 */
+ /* 第二开始 */
+ .listbox .hongse{
+ 	height: 580px;
+ }
+ #tebie{
+ 	width: 77px;
+ 	height: 35px;
+ 	font-size: 14px;
+ 	line-height: 35px;
+ 	margin-top: 47px;
+ }
+.listbox .hongse h3{
+	margin-top: 99px;
+	font-size: 40px;
+	line-height: 78px;
+}
+.listbox .liaojie{
+	width: 193px;
+	height: 29px;
+}
+.liaojie a{
+	font-size: 17px;
+}
+.tutu{
+	width: 334px;
+	height: 335px;
+    background: url('../img/hero_large_2x.png')no-repeat center/cover;
+}
+/* 音乐开始 */
+.botbos{
+	width: 100%;
+	height: 1812px;
+	background: red;
+}
+.botbos ul li{
+	width: 50%;
+	height: 604px;
+	background: url('../img/music_three_months_large_2x.jpg')no-repeat center/cover;
+	border: 12px solid #fff;
+	box-sizing: border-box;
+	float: left;
+
+}
+.botbos ul li:nth-child(2),.botbos ul li:nth-child(4),
+.botbos ul li:nth-child(6)
+{
+	border-left: none;
+
+}
+.botbos ul li:nth-child(1),.botbos ul li:nth-child(2),
+.botbos ul li:nth-child(3),.botbos ul li:nth-child(4)
+{
+	border-bottom: none;
+}
+.shangtu1{
+	display: block;
+}
+
+.shangtu2,.shangtu3{
+	display: none;
+}
+.wangba{
+	font-size: 17px;
+	color: #fff;
+	display: block;
+	text-align: center;
+}
+/* 音乐结束 */
+ /* 第二结束 */
+.sanda{
+	display: none;
+}
+
+
+.dashabi{
+	width: 100%;
+	/* height: 500px; */
+	background: #f2f2f2;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.wangzhan {
+	width: 980px;
+	height: 298px;
+	margin: 0 auto;
+	padding-top: 40px;
+	background: #f2f2f2;
+	
+}
+.wangzhan ul li{
+	width: 20%;
+	height: 298px;
+	float: left;
+	
+}
+.wangzhan ul li div{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.wangzhan ul li h3{
+	font-size: 10px;
+	text-align: center;
+	line-height: 10px;
+	color: #333333;
+}
+.wangzhan ul li a{
+	display: block;
+	font-size: 9px;
+	color: #5a5a5f;
+	width: 100%;
+}
+.gaoxiao{
+	padding-bottom: 15px;
+}
+.aa{
+	height: 241px;
+}
+.bb{
+	height: 292px;
+}
+.cc{
+	height: 152px;
+}
+.dd{
+	height: 229px;
+}
+.ee{
+	height: 139px;
+}
+.dahezi{
+	width: 980px;
+	padding-top: 34px;
+	margin: 0 auto;
+	background: #f2f2f2;
+}
+.textone{
+	font-size: 10px;
+	color: #888888;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	padding-bottom: 8px;
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 7px;
+}
+.textone a{
+	color: #0070c9;
+}
+.textone a:hover{
+	text-decoration: underline;
+}
+.texttwo{
+	font-size: 10px;
+	color: #888888;
+	margin-right: 30px;
+    margin-top: 5px;
+    width: 250px;
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    float: left;
+}
+.baohe{
+	width: 100%;
+	height: 20px;
+}
+.textthree{
+	width: 320px;
+	height: 21px;
+	float: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.textthree a{
+	border-right: 1px solid #d6d6d6;
+    padding-right: 10px;
+    font-size: 10px;
+    color: #555555;
+}
+.textthree a:hover{
+	text-decoration: underline;
+}
+.textthree a:last-child{
+	border: none;
+}
+.textfour a span{
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-image: url('../img/16.png');
+	float: left;
+	margin-right: 6px;
+}
+.textfour a{
+	font-size: 10px;
+	color: #555555;
+	line-height: 16px;
+}
+.textfour a:hover{
+	text-decoration: underline;
+}
+.textfour{
+	width: 49px;
+	float: right;
+	margin-top: 5px;
+   margin-bottom: 10px;
+}
+.textfive{
+	font-size: 10px;
+	color: #999999;
+	margin-top: 16px;
+	width: 100%;
+	height: 100%;
+}
+.textfive a{
+	font-size: 10px;
+	color: #999999
+}
+.heziaia{
+	width: 980px;
+	height: 20px;
+
+}
+}
+/* <1024px */
+@media screen and (max-width: 1024px){
+	header main{
+		padding-right: 22px;
+	}
+	nav ul{
+		padding-right: 22px;
+		padding-left: 22px;
+	}
+	.min{
+		display: none;
+	}
+   .listbox ul li{
+    height: 569px;
+   }
+   .listbox h1{
+ 	font-size: 32px;
+ 	line-height: 51px;
+ 	margin-top: 99px;
+ }
+   .listbox h2{
+ 	font-size: 20px;
+ 	line-height: 51px;
+ }
+ .listbox .xiatu{
+ 	width: 704px;
+ 	height: 148px;
+    bottom: 130px;
+    background: url('../img/iphone_x_medium.jpg') no-repeat center/cover;
+ }
+ /* 第一结束 */
+ /* 第二开始 */
+ .listbox .hongse{
+ 	height: 569px;
+ }
+ #tebie{
+ 	width: 77px;
+ 	height: 35px;
+ 	font-size: 14px;
+ 	line-height: 35px;
+ 	margin-top: 47px;
+ }
+ .listbox .hongse h3{
+	margin-top: 108px;
+	font-size: 36px;
+	line-height: 66px;
+}
+.liaojie a{
+	font-size: 15px;
+}
+.listbox .liaojie{
+	width: 172px;
+	height: 29px;
+}
+.tutu{
+	width: 320px;
+	height: 327px;
+    background: url('../img/hero_medium.png')no-repeat center/cover;
+}
+/* yinyue结束 */
+.botbos{
+	width: 100%;
+	height: 1542px;
+}
+.botbos ul li{
+	width: 50%;
+	height: 514px;
+	background: url('../img/music_three_months_medium.jpg')no-repeat center/cover;
+	border: 12px solid #fff;
+	box-sizing: border-box;
+	float: left;
+}
+.shangtu3{
+	display: block;
+}
+.shangtu1,.shangtu2{
+	display: none;
+}
+.wangba{
+	font-size: 15px;
+	color: #fff;
+	display: block;
+	text-align: center;
+
+}
+.botbos ul li:nth-child(2),.botbos ul li:nth-child(4),
+.botbos ul li:nth-child(6)
+{
+	border-left: none;
+
+}
+.botbos ul li:nth-child(1),.botbos ul li:nth-child(2),
+.botbos ul li:nth-child(3),.botbos ul li:nth-child(4)
+{
+	border-bottom: none;
+}
+/* yinyue结束 */
+/* .dashabi{
+	display: block;
+} */
+/* .wangzhan {
+	width: 100%;
+	padding:40px  20px 0;
+
+	box-sizing: border-box;
+}
+.dahezi{
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;} */
+.sanda{
+		display: none;
+	}
+/* .textone{
+	margin-top: 24px;
+} */
+.dashabi{
+	width: 100%;
+	/* height: 500px; */
+	background: #f2f2f2;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.wangzhan {
+	height: 298px;
+	margin: 0 auto;
+	padding: 40px 20px 0;
+	background: #f2f2f2;
+	
+}
+.wangzhan ul li{
+	width: 20%;
+	height: 298px;
+	float: left;
+	
+}
+.wangzhan ul li div{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.wangzhan ul li h3{
+	font-size: 10px;
+	text-align: center;
+	line-height: 10px;
+	color: #333333;
+}
+.wangzhan ul li a{
+	display: block;
+	font-size: 9px;
+	color: #5a5a5f;
+	width: 100%;
+}
+.gaoxiao{
+	padding-bottom: 15px;
+}
+.aa{
+	height: 241px;
+}
+.bb{
+	height: 292px;
+}
+.cc{
+	height: 152px;
+}
+.dd{
+	height: 229px;
+}
+.ee{
+	height: 139px;
+}
+.dahezi{
+	padding-top: 34px;
+	margin: 0 auto;
+	background: #f2f2f2;
+}
+.textone{
+	font-size: 10px;
+	color: #888888;
+	line-height: 25px;
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 7px;
+   
+
+}
+.ttone{
+	padding: 0 20px 10px;
+	box-sizing: border-box;
+}
+.textone a{
+	color: #0070c9;
+}
+.textone a:hover{
+	text-decoration: underline;
+}
+.texttwo{
+	font-size: 10px;
+	color: #888888;
+	margin-right: 30px;
+    margin-top: 5px;
+    width: 250px;
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    float: left;
+}
+.baohe{
+	
+	height: 20px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.textthree{
+	width: 320px;
+	height: 21px;
+	float: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.textthree a{
+	border-right: 1px solid #d6d6d6;
+    padding-right: 10px;
+    font-size: 10px;
+    color: #555555;
+}
+.textthree a:hover{
+	text-decoration: underline;
+}
+.textthree a:last-child{
+	border: none;
+}
+.textfour a span{
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-image: url('../img/16.png');
+	float: left;
+	margin-right: 6px;
+}
+.textfour a{
+	font-size: 10px;
+	color: #555555;
+	line-height: 16px;
+}
+.textfour a:hover{
+	text-decoration: underline;
+}
+.textfour{
+	width: 49px;
+	float: right;
+	margin-top: 5px;
+   margin-bottom: 10px;
+}
+.textfive{
+	font-size: 10px;
+	color: #999999;
+	margin-top: 16px;
+	width: 100%;
+	height: 100%;
+}
+.textfive a{
+	font-size: 10px;
+	color: #999999
+}
+.heziaia{
+	
+	height: 20px;
+	padding: 0 20px;
+
+}
+	
+/* <768px */
+@media screen and (max-width: 768px){
+	.min{
+		display: block;
+		}
+	.max{
+		display: none;
+	}
+  .listbox ul li{
+    height: 500px;
+   }
+   .listbox h1{
+ 	font-size: 24px;
+ 	line-height: 38px;
+ 	margin-top: 39px;
+ }
+   .listbox h2{
+ 	font-size: 16px;
+ 	line-height: 38px;
+ }
+ .listbox .xiatu{
+ 	width: 167px;
+ 	height: 333px;
+    bottom: 38px;
+    background: url('../img/iphone_x_small_2x.jpg') no-repeat center/cover;
+}
+/* 第二开始 */
+.listbox .hongse{
+	height: 500px;
+}
+#tebie{
+ 	width: 54px;
+ 	height: 22px;
+ 	font-size: 14px;
+ 	line-height: 22px;
+ 	margin-top: 40px;
+ }
+.listbox .hongse h3{
+	width: 211px;
+	margin: 67px auto 0;
+	font-size: 25px;
+	line-height: 45px;
+}
+.liaojie a{
+	font-size: 13px;
+}
+.listbox .liaojie{
+	width: 151px;
+   height: 29px;
+}
+.tutu{
+	width: 282px;
+	height: 327px;
+    background: url('../img/hero_small_2x.png')no-repeat center/cover;
+}
+.botbos{
+	width: 100%;
+	height: 3210px;
+}
+.botbos ul li{
+	width: 100%;
+	height: 523px;
+	background: url('../img/music_three_months_small_2x.jpg')no-repeat center/cover;
+	float: left;
+	margin-top: 12px;
+	border: none;
+}
+.shangtu1,.shangtu3{
+	display: none;
+}
+.shangtu2{
+	display: block;
+}
+
+.wangba{
+	font-size: 17px;
+	width: 140px;
+	color: #fff;
+	display: block;
+	line-height: 25px;
+	text-align: center;
+	margin: 0 auto;
+}
+.dashabi{
+	display: none;
+}
+.sanda{
+	width: 100%;
+	padding: 0 16px;
+	margin-top: 12px;
+	box-sizing: border-box;
+	background: #f2f2f2;
+	padding-bottom: 20px;
+}
+.sanda ul li{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #d6d6d6;
+}
+.sanda  ul li a{
+	text-align: center;
+	line-height: 36px;
+	font-size: 10px;
+	color: #333333;
+}
+.xings{
+	margin: 17px 0 9px;
+	box-sizing: border-box;
+	display: block;
+}
+.texa{
+	font-size: 10px;
+	color: #888888;
+	width: 100%;
+	line-height: 18px;
+    margin-bottom: 15px;
+    border: none;
+}
+.texa a{
+	color: #0070c9;
+}
+.texa a:hover{
+	text-decoration: underline;
+}
+.texb a span{
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-image: url('../img/16.png');
+	float: left;
+	margin-right: 6px;
+}
+.texb a{
+	font-size: 10px;
+	color: #555555;
+	line-height: 16px;
+
+}
+.texb a:hover{
+	text-decoration: underline;
+}
+.texb{
+	width: 49px;	
+}
+.texc{
+	font-size: 10px;
+	color: #888888;
+	margin-top: 17px;
+}
+ .texd{
+	font-size: 10px;
+	color: #888888;
+	/* line-height: 10px; */
+	margin-top: 10px;
+}
+.texd a{
+	border-right: 1px solid #d6d6d6;
+    padding-right: 10px;
+    font-size: 10px;
+    color: #555555;
+    margin-right: 7px;
+}
+.texd a:hover{
+	text-decoration: underline;
+}
+.texd a:last-child{
+	border: none;
+}
+.texe,.texe a{
+	font-size: 10px;
+	color: #b3b4b8;
+	height: 10px;
+	margin: 0;
+}
+.texe{
+	margin-top: 10px;
+}
+.texe a:hover{
+	text-decoration: underline;
+}
+.sanda{
+	display: block;
+}
+}
