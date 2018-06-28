@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="https://at.alicdn.com/t/font_677693_dhsvan4p16a2lnmi.css">
+        <script src="jquery-3.3.1.min.js"></script>
     </head>
     <body>
     <!-- head开始 -->
@@ -146,32 +147,80 @@
 <div class="sanda">
     <ul>
         <li>
-            <a href=""><h4>选购及了解</h3></a>
-            <a href="">+</a>
+            <a href="javascript:;" class="aaaa"><h4>选购及了解</h4></a>
+            <a href="javascript:;" class="ssss">+</a>
+            <div class="wenwen">
+               <p class="xiaowen">Mac</p>
+               <p class="xiaowen">iPad</p>
+               <p class="xiaowen">iPhone</p>
+               <p class="xiaowen">Watch</p>
+               <p class="xiaowen">Music</p>
+               <p class="xiaowen">iTunes</p>
+               <p class="xiaowen">iPod touch</p>
+               <p class="xiaowen">配件</p>
+               <p class="xiaowen">App Store 充值卡</p>
+           </div>
         </li>
         <li>
-           <a href=""><h4>Apple Store 商店</h4></a>
-            <a href="">+</a> 
+           <a href="javascript:;" class="aaaa"><h4>Apple Store 商店</h4></a>
+            <a href="javascript:;" class="ssss">+</a> 
+            <div class="wenwen">
+              <p class="xiaowen">查找零售店</p>
+               <p class="xiaowen">Genius Bar 天才吧</p>
+               <p class="xiaowen">Today at Apple</p>
+               <p class="xiaowen">Apple 夏令营</p>
+               <p class="xiaowen">Field Trip 课外活动</p>
+               <p class="xiaowen">Apple Store App</p>
+               <p class="xiaowen">翻新和优惠</p>
+               <p class="xiaowen">分期付款</p>
+               <p class="xiaowen">Apple GiveBack 回馈计划</p>
+               <p class="xiaowen">订单状态</p>
+               <p class="xiaowen">选购帮助</p>
+           </div>
         </li>
         <li>
-            <a href=""><h4>教育应用</h4></a>
-            <a href=""><h4>+</h4></a> 
+            <a href="javascript:;" class="aaaa"><h4>教育应用</h4></a>
+            <a href="javascript:;" class="ssss"><h4>+</h4></a> 
+            <div class="wenwen">
+               <p class="xiaowen">Apple 与教育</p>
+               <p class="xiaowen">高校师生选购</p>
+           </div>
         </li>
         <li>
-            <a href=""><h4>商务应用</h4></a>
-            <a href=""><h4>+</h4></a> 
+            <a href="javascript:;" class="aaaa"><h4>商务应用</h4></a>
+            <a href="javascript:;" class="ssss"><h4>+</h4></a> 
+            <div class="wenwen">
+               <p class="xiaowen">Appel与商务</p>
+               <p class="xiaowen">商务选购</p>
+           </div>
         </li>
         <li>
-            <a href=""><h4>账户</h4></a>
-            <a href=""><h4>+</h4></a> 
+            <a href="javascript:;" class="aaaa"><h4>账户</h4></a>
+            <a href="javascript:;" class="ssss"><h4>+</h4></a> 
+            <div class="wenwen">
+               <p class="xiaowen">管理你的 Apple ID</p>
+               <p class="xiaowen">Apple Store 账户</p>
+               <p class="xiaowen">iCloud.com</p>
+           </div>
         </li>
         <li>
-            <a href=""><h4>Apple 价值观</h4></a>
-            <a href=""><h4>+</h4></a> 
+            <a href="javascript:;" class="aaaa"><h4>Apple 价值观</h4></a>
+            <a href="javascript:;" class="ssss"><h4>+</h4></a> 
+            <div class="wenwen">
+               <p class="xiaowen">辅助功能</p>
+               <p class="xiaowen">环境责任</p>
+               <p class="xiaowen">隐私</p>
+               <p class="xiaowen">供应商责任</p>
+           </div>
         </li>
         <li>
-            <a href=""><h4>关于Apple</h4></a>
-            <a href=""><h4>+</h4></a> 
+            <a href="javascript:;" class="aaaa"><h4>关于Apple</h4></a>
+            <a href="javascript:;" class="ssss"><h4>+</h4></a> 
+            <div class="wenwen">
+               <p class="xiaowen">Newsroom</p>
+               <p class="xiaowen">Apple 管理层</p>
+               <p class="xiaowen">工作机会</p>
+           </div>
         </li>
     </ul>
     <div  class="xings">
@@ -298,3 +347,64 @@
 <!-- 下部结束 -->
     </body>
 </html>
+<script>
+   function xiax(s1,su){
+    let flag=true
+    s1.click(function(){ 
+       if(flag){
+            ha1(this,su);
+            flag=false;
+        }
+     else{
+            ha2(this)
+            flag=true
+        }
+        
+    })
+       
+    function ha1(obj,shu){
+        $(obj).stop()
+        $(obj).css({transform:"rotate(45deg)"})
+        $(obj).parent().animate({"height":shu+"px"})
+        
+    }
+     function ha2(obj){
+        $(obj).stop()
+        $(obj).css({transform:"rotate(0deg)"})
+        $(obj).parent().css({"height":"36px"})
+        
+    }
+    }
+    let s1=$(".ssss").eq(0)
+    xiax(s1,300)
+    let s2=$(".ssss").eq(1)
+    xiax(s2,350)
+    let s3=$(".ssss").eq(2)
+    xiax(s3,100)
+    let s4=$(".ssss").eq(3)
+    xiax(s4,100)
+    let s5=$(".ssss").eq(4)
+    xiax(s5,130)
+    let s6=$(".ssss").eq(5)
+    xiax(s6,160)
+    let s7=$(".ssss").eq(6)
+    xiax(s7,130)
+   
+    
+// danghang
+let nav=$("nav")
+let liulanh=$(window).height()
+$(window).scroll(function() {
+        let gunh=$(document.body).scrollTop()||$(document.documentElement).scrollTop()
+        if(gunh>0){
+            nav.css({"top":"0px"})
+        }
+        else{
+            nav.css({"top":"40px"})
+        }
+
+        
+
+    })
+   
+</script>
